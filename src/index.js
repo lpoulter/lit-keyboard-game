@@ -1,5 +1,3 @@
-import "./style.css";
-
 if (window.self === window.top) {
   if (!("keyboard" in navigator)) {
     alert("Your browser does not support the Keyboard Lock API.");

@@ -8,10 +8,9 @@
   "type":"module",
   "author": "",
   "scripts": {
-    "build": "esbuild ./src/index.js --bundle --outfile=./docs/index.js --define:global=window",
-    "postbuild": "cp ./src/index.html ./docs/index.html",
-    "prebuild": "rm -rf ./docs",
-    "start": "npm run build -w"
+    "build": "esbuild ./src/index.js  src/app.css --outdir=docs --bundle --define:global=window",
+    "prebuild": "rm -rf ./docs && mkdir -p ./docs && cp ./src/index.html ./docs/index.html",
+    "start": "npm run build -- --watch"
   },
   "devDependencies": {
     "esbuild": "^0.13.6"

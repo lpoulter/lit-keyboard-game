@@ -1,0 +1,24 @@
+html {
+  background-color: aliceblue;
+}
+
+body {
+  margin: 0;
+}
+
+.emoji-image {
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+.game-screen {
+  display: flex;
+  place-content: center;
+}
+
+.controls-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
