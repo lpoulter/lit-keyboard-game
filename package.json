@@ -4,16 +4,7 @@
   "description": "",
   "main": "index.js",
   "homepage": "https://lpoulter.github.io/lit-keyboard-game/",
-  "scripts": {
-    "deploy": "gh-pages"
-  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "openmoji": "^13.1.0"
-  },
-  "devDependencies": {
-    "gh-pages": "^3.2.3"
-  }
+  "license": "ISC"
 }
