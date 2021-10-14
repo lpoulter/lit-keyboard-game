@@ -5,6 +5,16 @@
   "main": "index.js",
   "homepage": "https://lpoulter.github.io/lit-keyboard-game/",
   "keywords": [],
+  "type":"module",
   "author": "",
+  "scripts": {
+    "build": "esbuild ./src/index.js --bundle --outfile=./docs/index.js --define:global=window",
+    "postbuild": "cp ./src/index.html ./docs/index.html",
+    "prebuild": "rm -rf ./docs",
+    "start": "npm run build -w"
+  },
+  "devDependencies": {
+    "esbuild": "^0.13.6"
+  },
   "license": "ISC"
 }
